@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 def nothing(x):
 	pass
-
+print("initialting drawing pad")
 video = cv.VideoCapture(0)	
 cv.namedWindow("Drawing_pad")
 cv.namedWindow("hsv")
