@@ -53,7 +53,7 @@ while(True):
 	
 	r,frame =video.read()
 	H,W = frame.shape[:2]
-	frame = cv.resize(frame,(2*W,2*H),interpolation = cv.INTER_LINEAR)
+	frame = cv.resize(frame,(W,H),interpolation = cv.INTER_LINEAR)
 	hsv = cv.cvtColor(frame,cv.COLOR_BGR2HSV)
 	#rl = np.array([50,100,100])
 	#ru = np.array([131,255,255])
@@ -90,8 +90,9 @@ while(True):
 			initialy = center[1]
 			#print(initialx)
 			#print(initialy)
-		
+	img = np.flip(img,axis = 1)
 	cv.imshow("Drawing_pad",img)
+	img = np.flip(img,axis = 1)
 	if clear == 1:
 		img = np.zeros((500,700,3),np.uint8)
 		img[:] = [255,255,255]
