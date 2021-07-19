@@ -9,6 +9,6 @@ cd virtual-drawing-pad
 python3 drawingpad.py
 ````
 2. **set proper color threshold to track the motion of stylus**
-
+![](https://github.com/sushlokshah/virtual-drawing-pad/blob/master/Peek%202021-07-19%2019-56.gif)
 3. **Result**
 ![](https://github.com/sushlokshah/virtual-drawing-pad/blob/master/Peek%202021-07-19%2019-18.gif)
